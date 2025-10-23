@@ -1,5 +1,4 @@
 from model import BancoMongodb
-#Importa as views e o model que se comunica com o banco(Mongodb) 
 '''
 Classe responsável por controllar a aplicação
 Gerencia as telas , se comunica com o model e a view
@@ -57,4 +56,5 @@ class Controller:
         _id = avaliacao.get("_id")
         
         return self.model.excluir_por_email(email_digitado, _id)   
+
             
